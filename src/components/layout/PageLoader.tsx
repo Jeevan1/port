@@ -5,7 +5,7 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
 <path d="M0 0C812.563 32.0206 732.523 1069.1 1500 1093" stroke="#e3f4fe" stroke-width="3000" stroke-linecap="round"/>
 </svg>
 </div><div class="loader-inner"><div class="code-embed-9 w-embed w-script"><!-- ======================================================= -->
-<!-- JDEV (JEEVAN SHRESTHA) FULL PAGE LOADER COMPONENT         -->
+<!-- JDEV (JEEVAN SHRESTHA) SINGLE-LINE FULL PAGE LOADER     -->
 <!-- ======================================================= -->
 
 <svg
@@ -16,46 +16,40 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
   xmlns="http://www.w3.org/2000/svg"
   style="visibility: hidden; width: 100%; max-width: 1451px; height: auto"
 >
-  <!-- Path 0: Serpentine ribbon stroke -->
+  <!-- Path 0: Serpentine ribbon stroke sweeping through J and across D E V -->
   <path
-    d="M9.5022 602.203C130.513 541.926 163.851 545.542 284.259 610.875C402.641 675.109 590.609 623.802 578.502 465.31C573.002 393.31 660.002 382.81 660.002 453.81C660.002 483.31 659.762 495.353 660.002 523.727C660.231 550.772 660.002 579.905 680.502 583.81C694.002 586.381 704.502 579.31 714.002 568.81C723.502 558.31 729.048 555.163 742.502 518.31C754.002 486.81 741.002 472.31 725.502 472.31C707.002 472.31 697.492 491.81 709.002 520.31C719.502 546.31 727.301 559.545 738.502 571.31C741.834 574.81 763.118 593.044 779.002 579.31C793.002 567.205 791.002 543.59 791.002 516.31C791.002 500.999 791.002 485.31 791.002 453.81C791.002 249.749 1224 388.703 1246.5 576.703C1256.82 662.894 1163 668.866 1163 619.703C1163 541.203 1350.5 512.703 1441 527.703"
+    d="M9.5022 602.203C130.513 541.926 163.851 545.542 260 600C345 648 477 540 477 404C477 450 477 500 477 536C477 574 452 597 418 597C384 597 362 574 362 540C362 504 420 495 520 495C720 495 1224 388.703 1246.5 576.703C1256.82 662.894 1163 668.866 1163 619.703C1163 541.203 1350.5 512.703 1441 527.703"
     stroke="#fe3f40"
-    stroke-width="19"
+    stroke-width="22"
     stroke-linecap="round"
     stroke-linejoin="round"
   />
 
-  <!-- Path 1: Filled E (bottom left of DEV) -->
+  <!-- Path 1: Filled D (Coral Red #fe3f40, taller cap-height matching logo.png, same baseline y=620) -->
   <path
-    d="M555 640H710V676H595V734H695V768H595V832H715V868H555V640Z"
+    d="M548 380H626C678 380 712 424 712 500C712 576 678 620 626 620H548V380ZM594 576H622C650 576 666 548 666 500C666 452 650 424 622 424H594V576Z"
     fill="#fe3f40"
   />
 
-  <!-- Path 2: Filled V (bottom right of DEV) -->
+  <!-- Path 2: Filled E (Coral Red #fe3f40, same horizontal line y=404..620) -->
   <path
-    d="M745 640H788L840 812L892 640H935L862 868H818L745 640Z"
+    d="M754 404H892V448H800V490H876V532H800V576H892V620H754V404Z"
     fill="#fe3f40"
   />
 
-  <!-- Path 3: Center Code Wave Stroke -->
+  <!-- Path 3: Drawn J Stroke (Sky Blue #03a4ed, left of DEV on same horizontal line y=404..620) -->
   <path
-    d="M660.002 453.81C660.002 483.31 659.762 495.353 660.002 523.727C660.231 550.772 660.002 579.905 680.502 583.81C694.002 586.381 704.502 579.31 714.002 568.81C723.502 558.31 729.048 555.163 742.502 518.31C754.002 486.81 741.002 472.31 725.502 472.31C707.002 472.31 697.492 491.81 709.002 520.31C719.502 546.31 727.301 559.545 738.502 571.31C741.834 574.81 763.118 593.044 779.002 579.31C793.002 567.205 791.002 543.59 791.002 516.31C791.002 500.999 791.002 485.31 791.002 453.81"
+    d="M477 404L477 536C477 574 452 597 418 597C384 597 362 574 362 540L362 522"
     stroke="#03a4ed"
-    stroke-width="19"
+    stroke-width="46"
     stroke-linecap="butt"
-    stroke-linejoin="miter"
+    stroke-linejoin="round"
   />
 
-  <!-- Path 4: Filled J -->
+  <!-- Path 4: Filled V (Coral Red #fe3f40, same horizontal line y=404..620) -->
   <path
-    d="M598 448H634V545C634 578 614 596 582 596C552 596 535 579 535 550H567C567 564 573 570 583 570C595 570 601 562 601 545V448H598Z"
-    fill="#03a4ed"
-  />
-
-  <!-- Path 5: Filled D -->
-  <path
-    d="M812 452H866C908 452 934 479 934 522C934 565 908 592 866 592H812V452ZM844 564H864C889 564 902 548 902 522C902 496 889 480 864 480H844V564Z"
-    fill="#03a4ed"
+    d="M932 404H980L1016 562L1052 404H1100L1040 620H992L932 404Z"
+    fill="#fe3f40"
   />
 </svg>
 
@@ -106,7 +100,7 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
   .loader-inner svg,
   .two26-logo-svg {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1050px;
     height: auto;
     display: block;
     visibility: hidden;
@@ -285,16 +279,23 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
       let logoTimeline = null;
 
       if (logoSvg) {
-        const paths = Array.from(logoSvg.querySelectorAll("path"));
-        if (paths.length >= 6) {
-          const pathRibbon = paths[0];
-          const letter2 = paths[1];
-          const letter6 = paths[2];
-          const pathW = paths[3];
-          const letterT = paths[4];
-          const letterO = paths[5];
+        logoSvg.style.visibility = "visible";
+        const logoWrappers = loader.querySelectorAll(
+          ".logo-animation, .two26-logo-svg",
+        );
+        logoWrappers.forEach((el) => {
+          el.style.visibility = "visible";
+        });
 
-          const letters = [letterT, letterO, letter2, letter6];
+        const paths = Array.from(logoSvg.querySelectorAll("path"));
+        if (paths.length >= 5) {
+          const pathRibbon = paths[0];
+          const letterD = paths[1];
+          const letterE = paths[2];
+          const pathJ = paths[3];
+          const letterV = paths[4];
+
+          const letters = [letterD, letterE, letterV];
 
           if (pathRibbon) {
             pathRibbon.style.strokeLinecap = "round";
@@ -311,24 +312,24 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
             }
           }
 
-          if (pathW) {
-            pathW.style.strokeLinecap = "butt";
-            pathW.style.strokeLinejoin = "miter";
-            pathW.setAttribute("stroke-linecap", "butt");
-            pathW.setAttribute("stroke-linejoin", "miter");
+          if (pathJ) {
+            pathJ.style.strokeLinecap = "butt";
+            pathJ.style.strokeLinejoin = "round";
+            pathJ.setAttribute("stroke-linecap", "butt");
+            pathJ.setAttribute("stroke-linejoin", "round");
             if (hasDrawSVG) {
-              gsap.set(pathW, { drawSVG: "0%", strokeWidth: 19 });
+              gsap.set(pathJ, { drawSVG: "0%", strokeWidth: 46 });
             } else {
-              const lenW = pathW.getTotalLength ? pathW.getTotalLength() : 800;
-              pathW.style.strokeDasharray = lenW;
-              pathW.style.strokeDashoffset = lenW;
-              gsap.set(pathW, { strokeWidth: 19 });
+              const lenJ = pathJ.getTotalLength ? pathJ.getTotalLength() : 450;
+              pathJ.style.strokeDasharray = lenJ;
+              pathJ.style.strokeDashoffset = lenJ;
+              gsap.set(pathJ, { strokeWidth: 46 });
             }
           }
 
           letters.forEach((letter) => {
             if (!letter) return;
-            const randomAngle = gsap.utils.random(-25, 25);
+            const randomAngle = gsap.utils.random(-20, 20);
             letter.setAttribute("stroke", "#03a4ed");
             letter.setAttribute("stroke-linejoin", "round");
             const bbox = letter.getBBox();
@@ -337,22 +338,12 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
             gsap.set(letter, {
               scale: 0,
               rotation: randomAngle,
-              strokeWidth: 6,
+              strokeWidth: 8,
               svgOrigin: \`\${cx} \${cy}\`,
             });
           });
 
-          if (logoSvg) {
-            logoSvg.style.visibility = "visible";
-          }
-          const logoWrappers = loader.querySelectorAll(
-            ".logo-animation, .two26-logo-svg",
-          );
-          logoWrappers.forEach((el) => {
-            el.style.visibility = "visible";
-          });
-
-          logoTimeline = gsap.timeline({ delay: 0.25 }).timeScale(1.25);
+          logoTimeline = gsap.timeline({ delay: 0.15 }).timeScale(1.3);
 
           if (pathRibbon) {
             if (hasDrawSVG) {
@@ -360,8 +351,8 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
                 .to(
                   pathRibbon,
                   {
-                    strokeWidth: 19,
-                    duration: 1,
+                    strokeWidth: 22,
+                    duration: 0.8,
                     ease: "power2.in",
                   },
                   0,
@@ -369,8 +360,8 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
                 .to(
                   pathRibbon,
                   {
-                    drawSVG: "0% 7%",
-                    duration: 0.7,
+                    drawSVG: "0% 8%",
+                    duration: 0.6,
                     ease: "power2.in",
                   },
                   0,
@@ -378,11 +369,11 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
                 .to(
                   pathRibbon,
                   {
-                    drawSVG: "40% 47%",
-                    duration: 1.2,
+                    drawSVG: "28% 38%",
+                    duration: 0.9,
                     ease: "none",
                   },
-                  0.7,
+                  0.6,
                 );
             } else {
               const len = pathRibbon.getTotalLength
@@ -392,8 +383,8 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
                 .to(
                   pathRibbon,
                   {
-                    strokeWidth: 19,
-                    duration: 1,
+                    strokeWidth: 22,
+                    duration: 0.8,
                     ease: "power2.in",
                   },
                   0,
@@ -401,8 +392,8 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
                 .to(
                   pathRibbon,
                   {
-                    strokeDashoffset: len * 0.6,
-                    duration: 1.9,
+                    strokeDashoffset: len * 0.65,
+                    duration: 1.5,
                     ease: "power1.inOut",
                   },
                   0,
@@ -410,26 +401,26 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
             }
           }
 
-          if (pathW) {
+          if (pathJ) {
             if (hasDrawSVG) {
               logoTimeline.to(
-                pathW,
+                pathJ,
                 {
                   drawSVG: "100%",
-                  duration: 1.1,
+                  duration: 0.85,
                   ease: "power2.out",
                 },
-                "-=0.4",
+                "-=0.55",
               );
             } else {
               logoTimeline.to(
-                pathW,
+                pathJ,
                 {
                   strokeDashoffset: 0,
-                  duration: 1.1,
+                  duration: 0.85,
                   ease: "power2.out",
                 },
-                "-=0.4",
+                "-=0.55",
               );
             }
           }
@@ -440,19 +431,19 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
                 pathRibbon,
                 {
                   drawSVG: "100% 100%",
-                  duration: 1.1,
+                  duration: 0.95,
                   ease: "power2.inOut",
                 },
-                "-=0.5",
+                "-=0.45",
               );
               logoTimeline.to(
                 pathRibbon,
                 {
                   strokeWidth: 0,
-                  duration: 0.5,
+                  duration: 0.45,
                   ease: "power2.in",
                 },
-                "-=0.55",
+                "-=0.45",
               );
             } else {
               const len = pathRibbon.getTotalLength
@@ -462,72 +453,53 @@ const SECTION_HTML = `<div class="svg-bg-stroke w-embed"><svg width="100%" viewB
                 pathRibbon,
                 {
                   strokeDashoffset: -len * 0.05,
-                  duration: 1.1,
+                  duration: 0.95,
                   ease: "power2.inOut",
                 },
-                "-=0.5",
+                "-=0.45",
               );
               logoTimeline.to(
                 pathRibbon,
                 {
                   strokeWidth: 0,
-                  duration: 0.5,
+                  duration: 0.45,
                   ease: "power2.in",
                 },
-                "-=0.55",
+                "-=0.45",
               );
             }
           }
 
-          const allContentPaths = [pathW, letterT, letterO, letter2, letter6];
-          let minY = Infinity,
-            maxY = -Infinity;
-          allContentPaths.forEach((p) => {
-            if (!p) return;
-            const b = p.getBBox();
-            if (b.y < minY) minY = b.y;
-            if (b.y + b.height > maxY) maxY = b.y + b.height;
-          });
-          const viewBoxHeight = 1004;
-          const contentCenterY = (minY + maxY) / 2;
-          const viewBoxCenterY = viewBoxHeight / 2;
-          const offsetSVGUnits = contentCenterY - viewBoxCenterY;
-          const svgRect = logoSvg.getBoundingClientRect();
-          const scaleRatio =
-            svgRect.height > 0 ? svgRect.height / viewBoxHeight : 1;
-          const offsetPx = offsetSVGUnits * scaleRatio;
-
-          logoTimeline.to(
-            logoSvg,
-            {
-              y: -offsetPx,
-              duration: 0.8,
-              ease: "power2.inOut",
-            },
-            "+=0.1",
-          );
-
+          // Pop in D, E, V right alongside J on the same horizontal line as the ribbon sweeps across
           logoTimeline.to(
             letters,
             {
               scale: 1,
               rotation: 0,
-              duration: 0.6,
+              duration: 0.65,
               stagger: 0.1,
-              ease: "back.out(3)",
+              ease: "back.out(2.8)",
             },
-            "-=0.2",
+            "-=0.75",
           );
           logoTimeline.to(
             letters,
             {
               strokeWidth: 0,
-              duration: 0.6,
+              duration: 0.55,
               stagger: 0.1,
               ease: "power1.in",
+              onComplete: () => {
+                letters.forEach((l) => {
+                  if (l) l.removeAttribute("stroke");
+                });
+              },
             },
             "<",
           );
+
+          // Hold complete single-line JDEV logo briefly before exit sweep
+          logoTimeline.to({}, { duration: 0.35 });
         }
       }
 
