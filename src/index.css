@@ -1,0 +1,443 @@
+/* ==========================================================================
+   Jeevan Shrestha (https://sthajeevan.com.np) Color Palette & UI Overrides
+   Primary Sky Blue:   #03a4ed (rgb(3, 164, 237))
+   Secondary Coral:    #fe3f40 (rgb(254, 63, 64))
+   Soft Sky Tint:      #e3f4fe / #f2f9fe
+   Clean White:        #ffffff
+   Dark Slate Ink:     #0f172a
+   ========================================================================== */
+
+:root {
+  --brand-primary: #03a4ed !important;
+  --brand-coral: #fe3f40 !important;
+  --brand-secondary: #f2f9fe !important;
+  --brand-accent: #e3f4fe !important;
+  --brand-white: #ffffff !important;
+  --brand-black: #0f172a !important;
+  --brand-purple: #0f172a !important;
+}
+
+.body {
+  background-color: var(--brand-secondary) !important;
+  color: var(--brand-black) !important;
+}
+
+/* Hero Section Sky-Blue + Coral Gradient Surface */
+.section-hero-wrapper {
+  background-color: #e3f4fe !important;
+  background-image: radial-gradient(circle at 18% 18%, rgba(254, 63, 64, 0.1) 0%, transparent 42%),
+    radial-gradient(circle at 82% 24%, rgba(3, 164, 237, 0.16) 0%, transparent 48%),
+    linear-gradient(180deg, #e3f4fe 68%, #f2f9fe 100%) !important;
+}
+
+/* Heading Dual-Accent Styling */
+.section-hero .heading {
+  color: #03a4ed !important;
+}
+
+.section-hero .heading .coral-accent {
+  color: #fe3f40 !important;
+}
+
+/* Hero Floating Pills: Combine Coral Red (#fe3f40), Dark Slate (#0f172a), and Sky Blue (#03a4ed) */
+.hero-pill.two {
+  background-color: #fe3f40 !important;
+  box-shadow: 0 8px 24px rgba(254, 63, 64, 0.28) !important;
+}
+.hero-pill.two .hero-pill-text {
+  color: #ffffff !important;
+  -webkit-text-stroke-color: #ffffff !important;
+}
+
+.hero-pill.one {
+  background-color: #0f172a !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.2) !important;
+}
+.hero-pill.one .hero-pill-text {
+  color: #e3f4fe !important;
+}
+
+.hero-pill.three {
+  background-color: #03a4ed !important;
+  box-shadow: 0 8px 24px rgba(3, 164, 237, 0.28) !important;
+}
+.hero-pill.three .hero-pill-text {
+  color: #ffffff !important;
+  -webkit-text-stroke-color: #ffffff !important;
+}
+
+/* About Section Pills: Alternate Sky Blue & Coral Red */
+.about-pill.first {
+  background-color: #03a4ed !important;
+}
+.about-pill.first .hero-pill-text {
+  color: #ffffff !important;
+}
+.about-pill.second {
+  background-color: #fe3f40 !important;
+}
+.about-pill.second .hero-pill-text {
+  color: #ffffff !important;
+}
+.about-pill.third {
+  background-color: #0f172a !important;
+}
+.about-pill.third .hero-pill-text {
+  color: #e3f4fe !important;
+}
+
+/* Projects End Pills */
+.projects-pill-first {
+  background-color: #fe3f40 !important;
+}
+.projects-pill-first .hero-pill-text {
+  color: #ffffff !important;
+}
+.projects-pill-second {
+  background-color: #03a4ed !important;
+}
+.projects-pill-second .hero-pill-text {
+  color: #ffffff !important;
+}
+.projects-pill-fourth {
+  background-color: #0f172a !important;
+}
+.projects-pill-fourth .hero-pill-text {
+  color: #ffffff !important;
+}
+
+/* CTA Button Coral & Sky Accents */
+.cta-btn-arrow {
+  background-color: #fe3f40 !important;
+}
+.cta-btn-fill-hover {
+  background-color: #03a4ed !important;
+}
+
+/* Hero Portrait & Bento Showcase Stage */
+.jeevan-hero-showcase {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5em;
+  overflow: visible;
+}
+
+.jeevan-hero-bento {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 1.5em;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 1.5em;
+  padding: 1.75em;
+  border: 4px solid #ffffff;
+  box-shadow: 0 22px 50px rgba(3, 164, 237, 0.22), 0 6px 16px rgba(15, 23, 42, 0.14);
+  overflow: hidden;
+  align-items: stretch;
+}
+
+.jeevan-hero-bento-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.75em 0.5em 0.75em 3.25em;
+  color: #ffffff;
+  position: relative;
+  z-index: 4;
+}
+
+.section-faq-header .section-about-text {
+  position: static !important;
+  text-align: left !important;
+  margin-bottom: 0.25em !important;
+}
+
+.jeevan-hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  background: rgba(3, 164, 237, 0.18);
+  border: 1px solid rgba(3, 164, 237, 0.45);
+  color: #e3f4fe;
+  padding: 0.45em 1em;
+  border-radius: 999px;
+  font-family: var(--font-secondary);
+  font-size: 0.85em;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.jeevan-status-dot {
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  background: #fe3f40;
+  box-shadow: 0 0 10px #fe3f40;
+}
+
+.jeevan-hero-bento-title {
+  font-family: var(--font-primary-dark);
+  font-size: 2.6em;
+  line-height: 98%;
+  color: #ffffff;
+  margin: 0.35em 0 0.2em;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.jeevan-hero-bento-desc {
+  font-family: var(--font-secondary);
+  font-size: 1em;
+  line-height: 145%;
+  color: rgba(227, 244, 254, 0.86);
+  margin: 0 0 1em;
+  max-width: 30em;
+}
+
+.jeevan-hero-bento-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75em;
+  margin-top: auto;
+}
+
+.jeevan-mini-shot {
+  width: 100%;
+  height: 6.5em;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 0.75em;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  background: #ffffff;
+}
+
+.jeevan-hero-portrait-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 22em;
+  border-radius: 1.15em;
+  overflow: hidden;
+  border: 3px solid rgba(3, 164, 237, 0.5);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+  background: linear-gradient(135deg, #03a4ed 0%, #fe3f40 100%);
+}
+
+.jeevan-hero-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .jeevan-hero-bento {
+    grid-template-columns: 1fr;
+    padding: 1.25em;
+  }
+  .jeevan-hero-bento-title {
+    font-size: 1.85em;
+  }
+  .jeevan-hero-bento-projects {
+    display: none;
+  }
+}
+
+.jeevan-hero-badge {
+  position: absolute;
+  z-index: 5;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 0.45em 0.9em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.16);
+  border: 2px solid rgba(3, 164, 237, 0.25);
+  font-family: var(--font-secondary);
+  font-size: 0.82em;
+  font-weight: 600;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.jeevan-hero-badge img {
+  width: 1.4em;
+  height: 1.4em;
+  object-fit: contain;
+}
+
+.jeevan-hero-badge.b1 {
+  top: -0.9em;
+  left: -1.2em;
+  transform: rotate(-6deg);
+}
+
+.jeevan-hero-badge.b2 {
+  bottom: 1.1em;
+  left: -1.6em;
+  transform: rotate(4deg);
+  border-color: rgba(254, 63, 64, 0.35);
+}
+
+.jeevan-hero-badge.b3 {
+  top: 1.2em;
+  right: -1.5em;
+  transform: rotate(6deg);
+}
+
+/* Showcase Marquee Cards */
+.showcase-slide {
+  border-radius: 1.25em;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.1);
+  border: 3px solid #ffffff;
+  background: #ffffff;
+}
+
+.showcase-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: top center !important;
+  display: block;
+}
+
+/* Project Card Polish for Web App Screenshots */
+.project-card-img-wrapper {
+  background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+}
+
+.project-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-radius: 0.75em;
+  padding: 0.35em 0.65em;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+}
+
+.project-logo-img {
+  max-height: 2.2em !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+/* Skills / Services Section Layout & Icon Badge Styling */
+.section-services-body {
+  position: relative !important;
+  min-height: auto !important;
+  padding: 2em 0 4em !important;
+}
+
+.services-path {
+  position: absolute !important;
+  inset: 0 !important;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-layers {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  grid-row-gap: 4.25em !important;
+  grid-column-gap: 4.25em !important;
+  height: auto !important;
+  padding: 1.5em 0 !important;
+}
+
+.service-svg {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #ffffff;
+  border-radius: 1em;
+  padding: 0.55em;
+  box-shadow: 0 10px 26px rgba(3, 164, 237, 0.18);
+  border: 2px solid rgba(3, 164, 237, 0.22);
+}
+
+/* Testimonials Stack Theme */
+.section-testimonials {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2em;
+}
+
+.testimonials-body-bg {
+  background-color: #0f172a !important;
+  background-image: radial-gradient(circle at 20% 20%, rgba(3, 164, 237, 0.28) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(254, 63, 64, 0.24) 0%, transparent 50%) !important;
+  overflow: hidden !important;
+}
+
+.testimonial-card {
+  border: 2px solid rgba(3, 164, 237, 0.22);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+  height: auto !important;
+  min-height: 22em;
+}
+
+.nav-arrow {
+  background-color: #fe3f40 !important;
+  color: #ffffff !important;
+}
+
+/* FAQ Section Polish */
+.section-faq {
+  position: relative;
+  z-index: 3;
+  background-color: var(--brand-secondary);
+}
+
+.cat-svg img {
+  border-radius: 1.5em;
+  box-shadow: 0 14px 36px rgba(3, 164, 237, 0.14);
+  border: 3px solid #ffffff;
+  background: #ffffff;
+  padding: 1em;
+}
+
+.question-block {
+  border-color: #03a4ed !important;
+  background-color: #ffffff !important;
+}
+
+.faq-item.is-open .question-block {
+  background-color: #e3f4fe !important;
+}
+
+.answer-block {
+  background-color: #03a4ed !important;
+  color: #ffffff !important;
+}
+
+.faq-answer {
+  color: #ffffff !important;
+}
+
+/* Footer Sky Blue + Coral Glow */
+.footer {
+  background-color: #0b1120 !important;
+}
+
+.footer-overlay {
+  background-image: linear-gradient(
+    180deg,
+    rgba(3, 164, 237, 0) 35%,
+    rgba(3, 164, 237, 0.78) 78%,
+    rgba(254, 63, 64, 0.82) 100%
+  ) !important;
+}
